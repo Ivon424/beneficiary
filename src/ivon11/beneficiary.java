@@ -112,7 +112,7 @@ private boolean isPositiveInteger(String str) {
     return str.matches("\\d+"); // Matches one or more digits
 }
     
-    private void viewbeneficiary() {
+    public void viewbeneficiary() {
         String qry = "SELECT * FROM tbl_beneficiary";
         String[] hrds = {"b_id", "b_name", "b_age", "b_address", "b_fam"};
         String[] clms = {"b_id", "b_name", "b_age", "b_address", "b_fam"};
@@ -120,7 +120,7 @@ private boolean isPositiveInteger(String str) {
         conf.viewRecords(qry, hrds, clms);
     }    
 
-    private void updatebeneficiary() {
+    public void updatebeneficiary() {
         config conf = new config();
 
         System.out.print("Enter ID to update: ");

@@ -15,9 +15,10 @@ public class Ivon11 {
         System.out.println("Welcome to the 4p's Tracker:");
         System.out.println("");
         System.out.println("1.Beneficiary:");
-        System.out.println("2.Released:");
-         System.out.println("3.Report:");
-        System.out.println("4.Exit:");
+        System.out.println("2.Program:");
+         System.out.println("3.Releasing:");
+         System.out.println("4.Report:");
+        System.out.println("5.Exit:");
         
         
         System.out.println("Enter Choice:");
@@ -29,11 +30,16 @@ public class Ivon11 {
                 bs.btransaction();
                 break;  
             case 2:
-                released rd = new released();
-                rd.rtransaction();
+                program pm =new program();
+                pm.ptransaction();
+               
                 break;
                 
             case 3:
+                releasing rg =new releasing();
+                rg.rtransaction();
+                
+            case 5:
                 System.out.print("Exit Selected....type'yes' to continue:");
                 String resp = sc.next();
                 if(resp.equalsIgnoreCase("yes")){
